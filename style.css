@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+    
+}
+
+body{
+    background-color: lightgray;
+}
+
+
+.main{
+    position: relative;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline;
+    top: 12%;
+   
+
+}
+
+/* div white */
+
+.white{
+    position: relative;
+    background-color: white;
+    width: 50vw;
+    height: 30vh;
+    border-radius: 0%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin: 2px;
+    left: 20%;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.308);
+
+}
+
+
+.white h3{
+    position: relative;
+    color: rgb(2, 175, 175);
+    left: 30px;
+    top: 25px;
+    
+}
+
+.white h4{
+    position: relative;
+    top:50px;
+    color: #BEF002;
+    left: 25px;
+}
+
+
+.white p{
+    position: relative;
+    color: black;
+    top: 60px;
+    left: 25px;
+}
+
+/* div green */
+
+
+.green{
+    position: relative;
+    background-color: #1DA96A;
+    left: 20.1%;
+    width: 25vw;
+    border-radius: 0%;
+    border-bottom-left-radius: 10px;
+    top: -1px;
+    height: 35vh;
+    color: white;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.219);
+}
+
+.green h4 {
+    position: relative;
+    left: 25px;
+    top: 25px;
+
+}
+
+.green h5{
+    position: relative;
+    top: 45px;
+    left:25px;
+}
+
+.green span{
+    color: lightgray;
+    opacity: 0.7;
+}
+
+
+
+.green p{
+    position: relative;
+    top: 60;
+    left: 25px;
+    color: lightgray;
+    
+}
+
+.green button{
+    position: relative;
+    left: 30px;
+    top: 80px;
+    background-color:lightgray;
+    color: black;
+  padding: 1rem 3rem;
+  font-weight: 600;
+  border-radius: 6px;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.479);
+   border: 0;
+   width: 15vw;
+   height: 6vh;
+   cursor: pointer;
+
+}
+
+.green button a{
+    position: relative;
+   text-decoration: none;
+   color: black; 
+   top: -2px;
+   
+ 
+}
+
+.green button:hover{
+    background-color: lightgray;
+    color: rgb(255, 250, 250);
+    transition: all 50ms ease-in-out;
+    transform: scale(1.2);
+}
+
+
+.green button::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(0, 0, 0);
+    transition: width .2s;
+    top: 12px;
+    
+}
+
+.green button:hover::after{
+    width: 100%;
+}
+
+
+
+
+
+
+
+/* div ligthtgreen */
+
+
+.lightgreen{
+    position: relative;
+    background-color: #6DB683;
+    left: 20.1%;
+    border-radius: 0%;
+    border-bottom-right-radius: 10px;
+    top: -1px;
+    height: 35vh;
+    width: 25vw;
+    color: white;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.185);
+}
+
+.lightgreen h5{
+    position: relative;
+    left: 25px;
+    top: 25px;
+}
+
+.lightgreen p{
+    position: relative;
+    left: 25px;
+    top: 35px;
+}
+
+
+
+
+
+.section{
+    display: flex;
+    
+}
+
+
+/* responsive site */
+
+@media screen and (max-width:750px  ) {
+    .section
+    {
+        display: inline;
+    }
+
+    /* white site */
+    .white{
+        position: relative;
+        top: 3px;
+        width: 50.2vw;
+        height: 26vh;
+        left: 19.93%;
+        background-color: white;
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.486);
+
+    }
+
+    .white h3{
+        color: rgb(0, 0, 0);
+        position: relative;
+    }
+
+     .white h4{
+         position: relative;
+         color: #acdb03;
+          font-size: 20px;
+     }
+     
+     .white p{
+         position: relative;
+         font-size: 20px;
+     }
+
+
+    /* green site */
+
+    .green{
+        background-color: #1DA96A;
+        width: 50.2vw;
+        height: 26vh;
+        border-radius: 0;
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.685);
+    }
+
+     
+    .green button{
+        position: relative;
+        left: 30px;
+        top: 80px;
+        background-color:lightgray;
+        color: black;
+      padding: 1rem 3rem;
+      font-weight: 600;
+      border-radius: 6px;
+      box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.479);
+       border: 0;
+       cursor: pointer;
+       width: 250px;
+       height: 50px;
+    
+    }
+
+      
+     
+
+
+
+    /* lightgreen site  */
+
+    .lightgreen{
+        position: relative;
+        background-color: #6DB683;
+        top: -3px;
+        width: 50.2vw;
+        height: 26vh;
+        border-bottom-left-radius: 10px;
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.479);
+
+    }
+
+    .lightgreen p{
+
+        position: relative;
+        font-size: 20px;
+    }
+
+}
